@@ -1,5 +1,5 @@
 {% set name = "preliz" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: d4c1554d5a0157b10ab3d590a9aa4188f7b4772959c1cec719c2db2221ea8007
+  sha256: 0f68b521c40473f4cf24df03a6d95e2dc57035e9e639343bd0c51f27f6ff7870
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - pip >=21.3
     - python >=3.10
     - flit
+    - setuptools
   run:
     - arviz
     - matplotlib-base >=3.5
