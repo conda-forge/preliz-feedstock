@@ -19,6 +19,7 @@ requirements:
     - pip >=21.3
     - python >=3.10
     - flit
+    - setuptools
   run:
     - arviz
     - matplotlib-base >=3.5
