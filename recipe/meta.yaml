@@ -1,5 +1,5 @@
 {% set name = "preliz" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 696f2cf9df94719fe22193b38242247370c9ec337a8bffefe8ebeeb261e06038
+  sha256: 9a67ad79940b86ca85f127e61214431e79db3694ab1a5f2ac31d691e68454891
 
 build:
   noarch: python
