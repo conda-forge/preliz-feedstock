@@ -1,5 +1,5 @@
 {% set name = "preliz" %}
-{% set version = "0.15.0" %}
+{% set version = "0.16.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 9a67ad79940b86ca85f127e61214431e79db3694ab1a5f2ac31d691e68454891
+  sha256: fe669fb485ae05d95ede8834d8fac96eee0086c8cc37c9ef0fedd3dbcd71c0f5
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - numba >=0.59
     - numpy >=1.24
     - python >={{ python_min }}
-    - scipy >=1.10, <1.13
+    - scipy >=1.10, <1.15
 
 test:
   imports:
