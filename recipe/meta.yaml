@@ -1,6 +1,6 @@
 {% set name = "preliz" %}
 {% set version = "0.25.0" %}
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - flit
     - setuptools
   run:
-    - arviz-stats >=0.6.0
+    - arviz-stats >=1.1.0,<2.0.0
     - matplotlib-base >=3.9
     - numba >=0.62
     - numpy >=2.0
