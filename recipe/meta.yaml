@@ -22,7 +22,7 @@ requirements:
     - flit
     - setuptools
   run:
-    - arviz-stats-core >=1.1.0,<2.0.0
+    - arviz-stats >=1.1.0,<2.0.0
     - matplotlib-base >=3.9
     - numba >=0.62
     - numpy >=2.0
